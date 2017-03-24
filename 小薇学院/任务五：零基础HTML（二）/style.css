@@ -1,0 +1,153 @@
+*{
+	margin: 0px;
+	padding:0px;
+}
+body{
+	background:#DEDEDE;
+}
+span{
+			color: #8C969F;
+			font-size:10px;
+			line-height: 30px;
+		}
+h1,h2,h3,span{
+			margin:12px;
+		}
+		p{
+			line-height: 1.8em;
+		}
+		h3{
+			color: #5C5F64;
+		}
+/**
+图片大小不能超过div
+*/
+img{
+ width:auto;
+ height:auto;
+ max-width:100%;
+ max-height:100%;
+}
+h1{
+	display: inline-block;
+	color: red;
+}
+#head{
+	width: 100%;
+	background:#333333;
+	overflow: hidden;
+}
+#head>ul{
+	float: right;
+	margin-top: 20px;
+}
+#head>ul>li{
+	float: left;
+}
+#head>ul>li>a{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	margin-right: 25px;
+}
+#head>ul>li>a:visited{
+	color: #858688;
+}
+#body_head,#body_first,#body_second,#body_third{
+    background-color: #FFFFFF;
+    margin:25px 0px 25px 25px;
+    padding:20px;
+    box-shadow: 5px 5px 5px #848484;
+ }
+ #body_fourth{
+ 	background-color: #FFFFFF;
+    margin:25px 25px 0px 0px;
+    padding:20px;
+    box-shadow: 5px 5px 5px #848484;
+ }
+ #left{
+ 	float: left;
+ 	width: 50%;
+ 	/*border: 1px solid red;*/
+ }
+#right{
+	/*border: 1px solid black;*/
+	float: right;
+	width: 650px;
+}
+#foot{
+	clear: both;
+	width: 100%;
+	background:#333333;
+	color: #fff;
+    text-align: center;
+    font-size:10px;
+    padding: 20px;
+}
+#body_first ul{
+    		list-style-type: none
+    		margin:5px;
+    	}
+#body_first li{
+    		padding: 5px;
+    	}
+#body_second{
+    		overflow: hidden;
+    	}
+#body_second span{
+    		color:black;
+    		font-size:15px;
+    	}
+#body_second ul{
+    		list-style-type: none;
+    		margin: 20px;
+    	}
+#body_second li{
+    		display: block;
+    		float: left;
+    		border:1px solid black;
+    		text-align: center;
+    		width:180px;
+    		margin: 10px;
+    		padding: 10px;
+    	}
+#body_third ol{
+    		margin:10px 0px 10px 45px; 
+    	}
+#body_third table{
+    		width:100%;
+    	}
+#body_third table,tr,th,td{
+    		border:1px solid #CECECC;
+    	}
+#body_third table,tr,th,td{
+    		border-collapse: collapse;
+    	}
+#body_third td,th{
+    		padding: 5px;
+    	}
+ #body_fourth button{
+    		width: 580px;
+    		border-radius: 8px;
+    		-webkit-border-radius:8px;
+	        -moz-border-radius:8px;
+    		color:#FFFFFF;
+    		font-size: 18px;
+    		border:none;
+    		background-color: #3355D0;
+    		padding: 10px;
+    	}
+label{
+    		display: inline-block;
+    		text-align: right;
+    		width:130px;
+    		margin-right: 12px;
+    	}
+label,input{
+    		margin: 10px;
+    	}
+#textbox{
+    		width: 500px;
+    		margin:0px auto;
+    	}
