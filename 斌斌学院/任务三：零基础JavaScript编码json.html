@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <ul id="source">
+    <li>北京空气质量：<b>90</b></li>
+    <li>上海空气质量：<b>70</b></li>
+    <li>天津空气质量：<b>80</b></li>
+    <li>广州空气质量：<b>50</b></li>
+    <li>深圳空气质量：<b>40</b></li>
+    <li>福州空气质量：<b>32</b></li>
+    <li>成都空气质量：<b>90</b></li>
+  </ul>
+
+  <ul id="resort">
+    <!-- 
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
+    <li>第三名：北京空气质量：<b>90</b></li>
+     -->
+
+  </ul>
+
+  <button id="sort-btn">排序</button>
+
+<script type="text/javascript">
+ var myArray = [
+{
+"city": "北京",
+"air": "90"
+},
+{
+"city": "福州",
+"air": "32"
+},
+{
+"city": "成都",
+"air": "90"
+},
+{
+"city": "上海",
+"air": "70"
+},
+{
+"city": "天津",
+"air": "80"
+},
+{
+"city": "广州",
+"air": "50"
+},
+{
+"city": "深圳",
+"air": "40"
+}
+];
+
+function myFunction(arr) {
+    var out = "";
+    var i;
+     arr.sort(function(a,b){
+            return b.air- a.air;
+        })
+    for(i = 0; i < arr.length; i++) {
+        out += '<li>第'+(i+1)+'名：'+arr[i].city + '空气质量：'+
+       arr[i].air+ '<br>';
+    }
+    document.getElementById("resort").innerHTML = out;
+}
+var btn=document.getElementById("sort-btn");
+btn.onclick=function(){
+  myFunction(myArray);
+}
+</script>
+</body>
+</html>
