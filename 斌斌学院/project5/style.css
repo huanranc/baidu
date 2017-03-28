@@ -1,0 +1,38 @@
+*{
+			margin: 0px;
+			padding: 0px;
+		}
+		#connect{
+			margin: 50px auto;
+			width: 50%;
+		}
+		ul li{
+			list-style-type: none;
+			width: 20px;
+			background: red;
+			line-height: 220px;
+			color:#fff;
+			margin: 2px;
+			text-align: center;
+			display: inline-block;
+			/*设置元素垂直方式*/
+			vertical-align: bottom;
+		}
+		button{
+			margin: 10px;
+			border:none;
+    		padding: 10px;
+    		border-radius: 8px;
+    		-webkit-border-radius:8px;
+	        -moz-border-radius:8px;
+    		color:#FFFFFF;
+		}
+		#leftadd,#leftdelete{
+			background-color: #3355D0;
+		}
+		#rightadd,#rightdelete{
+			background-color: green;
+		}
+		#sort{
+			background-color: red;
+		}
