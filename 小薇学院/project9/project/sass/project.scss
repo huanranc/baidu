@@ -15,4 +15,15 @@
   float: right;
   display: inline-block;
   margin-right: 5.75rem;
+  .search {
+    width: 20rem;
+    height: 1.875rem;
+    border: none;
+    border-radius: 15px;
+    margin-right: 1.625rem;
+  }
+  .login {
+    color: $white;
+    font-size: .75rem;
+  }
 }

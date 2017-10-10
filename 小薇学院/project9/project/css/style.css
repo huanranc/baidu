@@ -11,3 +11,12 @@
   float: right;
   display: inline-block;
   margin-right: 5.75rem; }
+  .navbar-container .search {
+    width: 20rem;
+    height: 1.875rem;
+    border: none;
+    border-radius: 15px;
+    margin-right: 1.625rem; }
+  .navbar-container .login {
+    color: #fff;
+    font-size: .75rem; }
