@@ -1,3 +1,13 @@
 .site-navbar {
+  padding: .75rem 0;
   width: 100%;
   background: #2189bf; }
+
+.navbar-brand {
+  display: inline-block;
+  margin-left: 3.125rem; }
+
+.navbar-container {
+  float: right;
+  display: inline-block;
+  margin-right: 5.75rem; }
