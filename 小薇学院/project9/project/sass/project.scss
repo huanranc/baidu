@@ -1,29 +1,66 @@
 //navbar
 //===================================================
 .site-navbar {
-  padding: .75rem 0;
+  display: flex;
+  align-items: center;
   width: 100%;
+  height: 56px;
   background: $site-navbar-bg;
-}
-
-.navbar-brand {
-  display: inline-block;
-  margin-left: 3.125rem;
-}
-
-.navbar-container {
-  float: right;
-  display: inline-block;
-  margin-right: 5.75rem;
-  .search {
-    width: 20rem;
-    height: 1.875rem;
-    border: none;
-    border-radius: 15px;
-    margin-right: 1.625rem;
+  .brand {
+   /* margin-left: 50px;
+    margin-right: 728px;*/
+    margin-left: 3%;
+    margin-right: 56.8%;
+  }
+  .search-box {
+    position: relative;
+    margin-right: 28px;
+    .search {
+      width: 313px;
+      height: 28px;
+      border: none;
+      border-radius: 15px;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 16px;
+      width: 17px;
+      height: 17px;
+      background: url(../images/search.png) no-repeat;
+    }
+  }
+  .person {
+    margin-right: 2px;
   }
   .login {
-    color: $white;
     font-size: .75rem;
+    color: $white;
+  }
+}
+
+.site-page {
+  display: flex;
+  .menubar {
+    width: 20%;
+    background: $menubar-bg;
+  }
+  .container {
+    flex: 1;
+    background: $container-bg;
+  }
+}
+
+.menubar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  .person-header {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background: gray;
   }
 }
