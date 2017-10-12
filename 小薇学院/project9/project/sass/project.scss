@@ -6,6 +6,7 @@
   width: 100%;
   height: 56px;
   background: $site-navbar-bg;
+
   .brand {
    /* margin-left: 50px;
     margin-right: 728px;*/
@@ -15,12 +16,15 @@
   .search-box {
     position: relative;
     margin-right: 28px;
+
     .search {
       width: 313px;
       height: 28px;
+      padding-left: 42px;
       border: none;
       border-radius: 15px;
     }
+
     &::before{
       content: "";
       position: absolute;
@@ -34,6 +38,7 @@
   .person {
     margin-right: 2px;
   }
+
   .login {
     font-size: .75rem;
     color: $white;
@@ -42,25 +47,63 @@
 
 .site-page {
   display: flex;
+
   .menubar {
     width: 20%;
     background: $menubar-bg;
   }
+
   .container {
     flex: 1;
     background: $container-bg;
   }
 }
 
-.menubar{
+.menubar {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+
   .person-header {
     width: 47px;
     height: 47px;
     border-radius: 50%;
     background: gray;
+  }
+}
+
+.container {
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+    margin: 0;
+    list-style: none;
+    background-color: $white;
+  }
+  .breadcrumb-item {
+    color: $breadcrumb-item-color;
+    +.breadcrumb-item::before {
+      display: inline-block;
+      padding-right: $breadcrumb-item-padding;
+      padding-left: $breadcrumb-item-padding;
+      color: $breadcrumb-divider-color;
+      content: "#{$breadcrumb-divider}";
+    }
+    &.active {
+      color: $breadcrumb-active-color;
+    }
+  }
+  .content {
+    padding: $content-padding-y $content-padding-x;
+  }
+}
+
+.content {
+  .search-list {
+    padding: $search-list-padding-y $search-list-padding-x;
+    border: 1px solid $search-list-border;
+    background: $white;
   }
 }

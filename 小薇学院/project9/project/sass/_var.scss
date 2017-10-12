@@ -1,6 +1,22 @@
-$site-navbar-bg: #2189bf ! default;
+$site-navbar-bg: #2189bf !default;
 
-$menubar-bg: #2a2e3d ! default; 
-$container-bg: #eeeeed ! default;
+$menubar-bg: #2a2e3d !default; 
+$container-bg: #eeeeed !default;
 
 $white:#fff ! default;
+
+$breadcrumb-divider-color:#adb5bd !default;
+$breadcrumb-item-color:$breadcrumb-divider-color !default;
+$breadcrumb-active-color: $site-navbar-bg !default;
+$breadcrumb-divider:"/" !default;
+
+$breadcrumb-padding-y: .75rem !default;
+$breadcrumb-padding-x: 1.25rem !default;
+$breadcrumb-item-padding: .5rem !default; 
+
+$content-padding-y: 1.5rem !default;
+$content-padding-x: 3.75rem !default;
+
+$search-list-padding-x: 1.875rem !default;
+$search-list-padding-y: 1.5rem !default;
+$search-list-border: #d9dbdd !default;
